@@ -4,7 +4,7 @@ class Home extends Component {
   handleSubmit = e => {
     e.preventDefault();
     let teacherName = this.name.value;
-    let teacherTopic = this.name.value;
+    let teacherTopic = this.topic.value;
     let path = `teachers/${teacherTopic} ${teacherName}`;
     this.props.history.push(path);
   };
@@ -30,6 +30,7 @@ class Home extends Component {
         </p>
         <hr />
         <h3>Featured Teachers</h3>
+        
         <form>
           <input
             type="text"
