@@ -5,7 +5,7 @@ class Home extends Component {
     e.preventDefault();
     let teacherName = this.name.value;
     let teacherTopic = this.topic.value;
-    let path = `teachers/${teacherTopic} ${teacherName}`;
+    let path = `teachers/${teacherTopic}/${teacherName}`;
     this.props.history.push(path);
   };
 
@@ -30,8 +30,8 @@ class Home extends Component {
         </p>
         <hr />
         <h3>Featured Teachers</h3>
-        
-        <form>
+
+        <form onSubmit={this.handleSubmit}>
           <input
             type="text"
             placeholder="Name"
