@@ -3,11 +3,6 @@ import { Route, NavLink, Redirect } from "react-router-dom";
 import CourseContainer from "./courses/CourseContainer";
 import { HTMLCourses, CSSCourses, JSCourses } from '../data/courses';
 
-
-// import HTML from "./courses/HTML";
-// import CSS from "./courses/CSS";
-// import JavaScript from "./courses/JavaScript";
-
 const Courses = ({ match }) => (
   <div className="main-content courses">
     <div className="course-header group">
